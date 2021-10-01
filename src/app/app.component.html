@@ -12,9 +12,9 @@
     <span
       *ngIf="walletService.getCotacao() < 0"
       class="valor"
-      style="color: rgb(0, 217, 100);"
+      style="color: rgb(230, 80, 69);"
     >
-      - {{ walletService.getCotacao() | number }}
+      {{ walletService.getCotacao() | number }}
     </span>
 
     <button
@@ -54,5 +54,7 @@
   Acesso Rápido: <a [routerLink]="['/currency']"> Cotação </a> |
   <a [routerLink]="['/wallet']"> Carteira </a>
 </p>
+
+<hr />
 
 <router-outlet></router-outlet>
