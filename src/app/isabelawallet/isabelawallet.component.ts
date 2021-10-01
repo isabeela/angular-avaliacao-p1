@@ -18,7 +18,7 @@ export class IsabelawalletComponent implements OnInit {
   }
 
   subtrair() {
-    this.walletService.meuBit = this.walletService.meuBit + this.newValue;
+    this.walletService.meuBit = this.walletService.meuBit - this.newValue;
     this.newValue = 0;
   }
 
