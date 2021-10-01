@@ -1,6 +1,21 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" [routerLink]="['/']"> P1 </a>
+    <span
+      *ngIf="walletService.getCotacao() > 0"
+      class="valor"
+      style="color: rgb(0, 217, 100);"
+    >
+      +{{ walletService.getCotacao() | number }}%
+    </span>
+    <span
+      *ngIf="walletService.getCotacao() < 0"
+      class="valor"
+      style="color: rgb(230, 80, 69);"
+    >
+      -{{ walletService.getCotacao() | number }}%
+    </span>
+
     <button
       class="navbar-toggler"
       type="button"
