@@ -1,0 +1,12 @@
+<div class="cotacao">
+  <table>
+    <tr class="titulos">
+      <th>Data/hora</th>
+      <th>Bitcoin</th>
+      <th>Real</th>
+      <th>Dólar</th>
+      <th>Euro</th>
+    </tr>
+    <tr *ngFor="let preco of this.walletService.updateList"></tr>
+  </table>
+</div>
