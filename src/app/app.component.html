@@ -6,14 +6,15 @@
       class="valor"
       style="color: rgb(0, 217, 100);"
     >
-      +{{ walletService.getCotacao() | number }}%
+      + {{ walletService.getCotacao() | number }}
     </span>
+
     <span
       *ngIf="walletService.getCotacao() < 0"
       class="valor"
-      style="color: rgb(230, 80, 69);"
+      style="color: rgb(0, 217, 100);"
     >
-      -{{ walletService.getCotacao() | number }}%
+      - {{ walletService.getCotacao() | number }}
     </span>
 
     <button
